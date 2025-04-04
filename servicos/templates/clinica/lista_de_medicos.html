@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Medicos</title>
+</head>
+<body>
+    <h1>Lista de Medicos</h1>
+    <a href="{% url 'lista_de_medicos' %}">Lista de Medicos</a>
+    <ul>
+        {% for lista_de_medico in lista_de_medicos %}
+            <li>
+                {{ medico.nome }} 
+                <a href=""></a>
+                <a href=""></a>
+            </li>
+            {% endfor %}
+    </ul>
+    
+</body>
+</html>
